@@ -1,0 +1,12 @@
+#Eclipse project files
+.classpath
+.settings/
+.project
+
+# Intellij project files
+*.iml
+.idea/
+
+# other
+target/
+logs/
