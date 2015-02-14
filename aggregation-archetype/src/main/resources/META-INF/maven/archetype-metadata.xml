@@ -53,12 +53,6 @@
 						<include>**/*.xml</include>
 					</includes>
 				</fileSet>
-				<fileSet filtered="true" packaged="false" encoding="UTF-8">
-					<directory />
-					<includes>
-						<include>pom.xml</include>
-					</includes>
-				</fileSet>
 			</fileSets>
 		</module>
 
@@ -120,12 +114,6 @@
 					<directory>src/main/assembly</directory>
 					<includes>
 						<include>**/*.xml</include>
-					</includes>
-				</fileSet>
-				<fileSet filtered="true" packaged="false" encoding="UTF-8">
-					<directory />
-					<includes>
-						<include>pom.xml</include>
 					</includes>
 				</fileSet>
 			</fileSets>
