@@ -232,12 +232,6 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 			</plugin>
 
-			<!-- war打包插件, 设定war包名称不带版本号 -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-			</plugin>
-
 			<!-- test插件, 仅测试名称为*Test的类,使用支持分组测试的surefire-junit47 driver -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
