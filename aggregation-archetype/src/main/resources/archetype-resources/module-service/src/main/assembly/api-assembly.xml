@@ -11,7 +11,7 @@
 	<includeBaseDirectory>false</includeBaseDirectory>
 	<fileSets>
 		<fileSet>
-			<directory>${project.build.directory}/classes/${package}/api</directory>
+			<directory>${project.build.directory}/classes/com/lx/blog/api</directory>
 			<outputDirectory>/</outputDirectory>
 		</fileSet>
 	</fileSets>
