@@ -92,7 +92,20 @@
 			<artifactId>jackson-module-jaxb-annotations</artifactId>
 		</dependency>
 		<!-- JSON end -->
-
+		
+		<!-- dubbo -->
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>dubbo</artifactId>
+				<version>2.5.3</version>
+				<exclusions>
+					<exclusion>
+			          <groupId>org.springframework</groupId>
+			          <artifactId>spring</artifactId>
+			        </exclusion>
+				</exclusions>
+			</dependency>
+		
 		<!-- LOGGING begin -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
