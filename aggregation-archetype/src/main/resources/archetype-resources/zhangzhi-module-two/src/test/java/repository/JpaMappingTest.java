@@ -20,7 +20,6 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.test.context.ContextConfiguration;
-import org.springside.modules.test.spring.SpringTransactionalTestCase;
 
 @ContextConfiguration(locations = { "/applicationContext.xml" })
 public class JpaMappingTest extends SpringTransactionalTestCase {
