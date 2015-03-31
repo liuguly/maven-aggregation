@@ -6,12 +6,13 @@
 	name="lx's quickstart" partial="false">
 
 	<requiredProperties>
-		<requiredProperty key="module-artifactId" />
+		<requiredProperty key="module-one-artifactId" />
+		<requiredProperty key="module-two-artifactId" />
 		<requiredProperty key="web-artifactId" />
 	</requiredProperties>
 	
 	<modules>
-		<module id="${module-artifactId}" dir="zhangzhi-module-one" name="module::service">
+		<module id="${module-one-artifactId}" dir="zhangzhi-module-one" name="module::service">
 			<fileSets>
 				<fileSet filtered="true" packaged="true" encoding="UTF-8">
 					<directory>src/main/java</directory>
@@ -54,6 +55,51 @@
 				</fileSet>
 			</fileSets>
 		</module>
+
+		<module id="${module-two-artifactId}" dir="zhangzhi-module-two" name="module::service">
+			<fileSets>
+				<fileSet filtered="true" packaged="true" encoding="UTF-8">
+					<directory>src/main/java</directory>
+					<includes>
+						<include>**/*.java</include>
+					</includes>
+				</fileSet>
+				<fileSet filtered="true" packaged="false" encoding="UTF-8">
+					<directory>src/main/resources</directory>
+					<includes>
+						<include>**/*.sql</include>
+						<include>**/*.xml</include>
+						<include>**/*.properties</include>
+					</includes>
+				</fileSet>
+				<fileSet filtered="true" packaged="true" encoding="UTF-8">
+					<directory>src/test/java</directory>
+					<includes>
+						<include>**/*.java</include>
+					</includes>
+				</fileSet>
+				<fileSet filtered="true" packaged="false" encoding="UTF-8">
+					<directory>src/test/resources</directory>
+					<includes>
+						<include>**/*.sql</include>
+						<include>**/*.properties</include>
+					</includes>
+				</fileSet>
+				<fileSet filtered="true" packaged="false" encoding="UTF-8">
+					<directory>src/main/scripts</directory>
+					<includes>
+						<include>**/*.*</include>
+					</includes>
+				</fileSet>
+				<fileSet filtered="true" packaged="false" encoding="UTF-8">
+					<directory>src/main/assembly</directory>
+					<includes>
+						<include>**/*.xml</include>
+					</includes>
+				</fileSet>
+			</fileSets>
+		</module>
+
 
 		<module id="${web-artifactId}" dir="zhangzhi-web" name="web::front">
 			<fileSets>
