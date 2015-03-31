@@ -314,7 +314,11 @@
 
 			<!-- h2 如果生产数据库不是H2，解开下面的注释 <dependency> <groupId>com.h2database</groupId> 
 				<artifactId>h2</artifactId> <version>${h2.version}</version> </dependency> -->
-
+		  	<dependency>
+		  		<groupId>mysql</groupId>
+		  		<artifactId>mysql-connector-java</artifactId>
+		  		<version>5.1.35</version>
+		  	</dependency>
 			<!-- jetty -->
 			<dependency>
 				<groupId>org.eclipse.jetty.aggregate</groupId>
