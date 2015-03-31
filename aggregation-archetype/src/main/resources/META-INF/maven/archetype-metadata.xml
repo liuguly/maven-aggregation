@@ -11,7 +11,7 @@
 	</requiredProperties>
 	
 	<modules>
-		<module id="${module-artifactId}" dir="module-service" name="module::service">
+		<module id="${module-artifactId}" dir="zhangzhi-module-one" name="module::service">
 			<fileSets>
 				<fileSet filtered="true" packaged="true" encoding="UTF-8">
 					<directory>src/main/java</directory>
@@ -55,7 +55,7 @@
 			</fileSets>
 		</module>
 
-		<module id="${web-artifactId}" dir="web" name="web::front">
+		<module id="${web-artifactId}" dir="zhangzhi-web" name="web::front">
 			<fileSets>
 				<fileSet filtered="true" packaged="true" encoding="UTF-8">
 					<directory>src/main/java</directory>
