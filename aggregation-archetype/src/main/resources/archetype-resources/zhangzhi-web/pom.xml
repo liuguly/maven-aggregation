@@ -5,7 +5,7 @@
 
 	<artifactId>${web-artifactId}</artifactId>
 	<packaging>war</packaging>
-	<name>${groupId}.${web-artifactId}</name>
+	<name>${web-artifactId}</name>
 	
 	<prerequisites>
 		<maven>3.0.0</maven>
